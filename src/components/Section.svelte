@@ -41,20 +41,21 @@
 
     img{
         position: absolute;
-        width: 100vw;
-        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         z-index: -1;
         object-fit: contain;   /* keeps proportions, no crop */
-        background: #000;
+
     }
 
     h2{
         margin: 0px;
         text-transform: uppercase;
-        font-family: "D-DIN";
+        font-family: "D-DIN-Bold", sans-serif;
         font-weight: bold;
         font-size: 47px;
-        letter-spacing: 2px;
 
     }
 
