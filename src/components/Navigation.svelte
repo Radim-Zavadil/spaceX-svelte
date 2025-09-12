@@ -4,7 +4,7 @@
 
 <main>
     <div class="navigationGroup">
-        <img src="../../public/img/spaceX-logo.png" alt="spaceX logo">
+        <img src="/img/spaceX-logo.png" alt="spaceX logo">
         <ul>
             {#each items as item}
                 <li>{item}</li>
@@ -42,20 +42,29 @@
     li{
         padding: 10px;
         margin: 10px;
+        font-size: 0.82em;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        font-family: "D-DIN";
     }
 
     img{
-        width: 30px;
-        height: 30px;
+        width: 200px;
+        
     }
 
     .timer{
-        padding: 15px 30px;
-        border: 2px solid rgba(255,255,255, 0.25);
+        padding: 2px 10px;
+        border: 1px solid rgba(142, 142, 142, 0.25);
         border-radius: 4px;
     }
 
     .timer p{
         text-transform: uppercase;
+        font-family: "D-DIN";
+        font-size: 0.62em;
+        font-weight: 400;
+        margin-right: 70px;
+        letter-spacing: 1;
     }
 </style>

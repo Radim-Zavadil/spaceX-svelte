@@ -1,10 +1,12 @@
 <script>
+    import { ArrowRight } from "lucide-svelte";
+
     export let buttonText;
 </script>
 
 <main>
     <p>{buttonText}</p>
-
+    <ArrowRight class="arrow"/>
 </main>
 
 <style>
@@ -23,8 +25,30 @@
     }
 
     p{
-        color: #fff;
+        color: #f0f0fa;
         text-transform: uppercase;
-        font-size: 0.85em;
+        font-family: "D-DIN";
+        margin-right: 5px;
+        font-size: 0.75em;
+    }
+
+    .arrow{
+        width: 10px;
+        height: 10px;
+        color: #f0f0fa;
+    }
+
+    main:hover {
+        background-color: rgba(255, 255, 255, 0.517);
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    main:hover p {
+        color: #000;
+    }
+
+    main:hover .arrow{
+        color: #000;
     }
 </style>
