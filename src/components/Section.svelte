@@ -65,6 +65,7 @@
         justify-content: flex-start; */
         padding-left: 4rem;
         overflow: hidden;
+        box-shadow: -36px 1px 100px -11px rgba(0,0,0,1) inset;
         }
 
     img {

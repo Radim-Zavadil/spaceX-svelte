@@ -39,6 +39,9 @@
         transition-duration: 0.5s;
         transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
         color: #000;
+        animation-name: arrowSlide;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     /* main:hover p {
@@ -48,5 +51,10 @@
     /* main:hover *{
         color: #000;
     } */
+
+    @keyframes arrowSlide{
+        0% {opacity: 0; left: -7px;}
+        100% {opacity: 1; left: 0px;}
+    }
 
 </style>
