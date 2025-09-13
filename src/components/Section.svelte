@@ -6,10 +6,42 @@
     export let description;
     export let buttonText;
 
-    export let position;
+    export let positionY; //start, center, end
+    export let positionX; //start, center, end
+
+    //justify-content prop
+    switch(positionX){
+        case "left":
+            positionX = "flex-start";
+            break;
+        case "center":
+            positionX = "center";
+            break;
+        case "right":
+            positionX = "flex-end";
+            break;
+        default:
+            positionX = "flex-start";
+    };
+
+    //align-items prop
+    switch(positionY){
+        case "top":
+            positionY = "flex-start";
+            break;
+        case "center":
+            positionY = "center";
+            break;
+        case "bottom":
+            positionY = "flex-end";
+            break;
+        default:
+            positionY = "center";
+    };
+
 </script>
 
-<main>
+<main style="display: flex; justify-content: {positionX}; align-items: {positionY}">
     <img src={image} alt="">
     <div class="content">
         
@@ -25,15 +57,15 @@
 <style>
 
     main {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 4rem;
-    overflow: hidden;
-    }
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* display: flex;
+        align-items: center;
+        justify-content: flex-start; */
+        padding-left: 4rem;
+        overflow: hidden;
+        }
 
     img {
         position: absolute;
@@ -48,7 +80,7 @@
     .content{
         height: 280px;
         max-width: 600px;
-        padding: 120px 220px;
+        padding: 170px 220px;
     }
 
     h2{
