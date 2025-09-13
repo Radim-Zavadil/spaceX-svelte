@@ -7,7 +7,7 @@
         <img src="/img/spaceX-logo.png" alt="spaceX logo">
         <ul>
             {#each items as item}
-                <li>{item}</li>
+                <li><p>{item}</p></li>
             {/each}
         </ul>
     </div>
@@ -47,11 +47,25 @@
     li{
         padding: 10px;
         margin: 10px;
+    }
+
+    li p{
         font-size: 0.82em;
         font-weight: 700;
         letter-spacing: 0.09em;
         font-family: "D-DIN";
+        color: rgba(240,240,250, 0.7);
+        text-shadow: 0 0 2px #F0F0FA70;
+        cursor: pointer;
     }
+
+    li p:hover{
+        color: rgb(240,240,250);
+        transition-duration: 0.7;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+
 
     img{
         width: 200px;
